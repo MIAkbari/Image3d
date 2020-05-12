@@ -3,10 +3,11 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4FC198B8B8D75F47C95AE09C /* Pods_Image3d.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 140BA5020C1576C3418A3348 /* Pods_Image3d.framework */; };
 		55462242246A9BA500F90EE7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55462241246A9BA500F90EE7 /* AppDelegate.swift */; };
 		55462244246A9BA500F90EE7 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55462243246A9BA500F90EE7 /* SceneDelegate.swift */; };
 		55462246246A9BA500F90EE7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55462245246A9BA500F90EE7 /* ViewController.swift */; };
@@ -16,6 +17,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		140BA5020C1576C3418A3348 /* Pods_Image3d.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Image3d.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5546223E246A9BA500F90EE7 /* Image3d.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Image3d.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		55462241246A9BA500F90EE7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		55462243246A9BA500F90EE7 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +26,8 @@
 		5546224A246A9BA700F90EE7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5546224D246A9BA700F90EE7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5546224F246A9BA700F90EE7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C5132AC1079FD35833312EF7 /* Pods-Image3d.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Image3d.debug.xcconfig"; path = "Target Support Files/Pods-Image3d/Pods-Image3d.debug.xcconfig"; sourceTree = "<group>"; };
+		CD20347FBAA8F12D9085E171 /* Pods-Image3d.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Image3d.release.xcconfig"; path = "Target Support Files/Pods-Image3d/Pods-Image3d.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +35,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4FC198B8B8D75F47C95AE09C /* Pods_Image3d.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,6 +47,8 @@
 			children = (
 				55462240246A9BA500F90EE7 /* Image3d */,
 				5546223F246A9BA500F90EE7 /* Products */,
+				F21851AA92AF5B69FF90816C /* Pods */,
+				BF41C6E1DED6D7D0652AA790 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -67,6 +74,23 @@
 			path = Image3d;
 			sourceTree = "<group>";
 		};
+		BF41C6E1DED6D7D0652AA790 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				140BA5020C1576C3418A3348 /* Pods_Image3d.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F21851AA92AF5B69FF90816C /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				C5132AC1079FD35833312EF7 /* Pods-Image3d.debug.xcconfig */,
+				CD20347FBAA8F12D9085E171 /* Pods-Image3d.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -74,9 +98,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 55462252246A9BA700F90EE7 /* Build configuration list for PBXNativeTarget "Image3d" */;
 			buildPhases = (
+				4C4AE23D556A565D175ED4BA /* [CP] Check Pods Manifest.lock */,
 				5546223A246A9BA500F90EE7 /* Sources */,
 				5546223B246A9BA500F90EE7 /* Frameworks */,
 				5546223C246A9BA500F90EE7 /* Resources */,
+				F7005B7F8D90D4F797B20BC0 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -132,6 +158,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		4C4AE23D556A565D175ED4BA /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Image3d-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F7005B7F8D90D4F797B20BC0 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Image3d/Pods-Image3d-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Image3d/Pods-Image3d-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Image3d/Pods-Image3d-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		5546223A246A9BA500F90EE7 /* Sources */ = {
@@ -282,9 +350,11 @@
 		};
 		55462253246A9BA700F90EE7 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C5132AC1079FD35833312EF7 /* Pods-Image3d.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = JKK6WX8WLZ;
 				INFOPLIST_FILE = Image3d/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -299,9 +369,11 @@
 		};
 		55462254246A9BA700F90EE7 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CD20347FBAA8F12D9085E171 /* Pods-Image3d.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = JKK6WX8WLZ;
 				INFOPLIST_FILE = Image3d/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
